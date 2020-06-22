@@ -1,0 +1,26 @@
+.issue {
+	border: 1px solid grey;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.issue:hover {
+	background-color: #1abc9c;
+}
+
+.issueTitle {
+	color: blue
+}
+
+.avatar { 
+	border-radius: 25px;
+}
+
+.unassigned {
+	background-color: grey;
+	height: 40px;
+	width: 40px;
+	border-radius: 25px;
+}

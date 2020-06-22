@@ -1,0 +1,40 @@
+.keyForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(107, 107, 122);
+	width: 650px;
+}
+
+.title {
+	font-size: 45px;
+	font-weight: lighter;
+}
+
+.submitBtn {
+	margin-top: 10px;
+	width: 50%;
+	border: none;
+	background-color: inherit;
+	font-size: 45px;
+	font-weight: lighter;
+	color: rgb(107, 107, 122);
+	border: 1px solid #F8F8FF;
+	border-radius: 15px;
+}
+
+.submitBtn:hover {
+	border-color: rgb(107, 107, 122);
+}
+
+.keyInput {
+	background-color: inherit;
+	border: none;
+	border-bottom: 3px solid rgb(107, 107, 122);
+	font-size: 30px;
+	width: 100%
+}
+
+.error {
+	color: red;
+}

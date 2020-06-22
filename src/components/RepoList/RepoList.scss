@@ -1,0 +1,20 @@
+.repoDiv {
+	width: 300px;
+	background-color: #2c3e50;
+}
+
+.repo {
+	padding: 8px;
+	display: flex;
+	font-size: 30px;
+	background-color: inherit;
+	color: white;
+}
+
+.repo:hover {
+	background-color: #2980b9;
+}
+
+.selected {
+	background-color: #2980b9;
+}
