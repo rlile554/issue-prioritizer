@@ -6,7 +6,7 @@ import { validateToken } from '../../utils/GitHubApi';
 
 const Login = () => {
 	const dispatch = useDispatch();
-	const storedKey = useSelector((state) => (state.apiKey ? state.apiKey : '296f7b4b255f727a6667d585eb2934ccbb216075'));
+	const storedKey = useSelector((state) => (state.apiKey ? state.apiKey : ''));
 	const [key, setKey] = useState(storedKey);
 	const [error, setError] = useState(false);
 
