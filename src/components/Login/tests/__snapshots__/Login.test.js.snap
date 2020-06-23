@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders 1`] = `
+<div>
+  <form
+    className="keyForm"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="title"
+    >
+      Please enter your GitHub API key
+    </h1>
+    <input
+      className="keyInput"
+      onChange={[Function]}
+      placeholder="..."
+      value=""
+    />
+    <button
+      className="submitBtn"
+      type="submit"
+    >
+      submit
+    </button>
+  </form>
+</div>
+`;

@@ -1,13 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
 import { Provider } from 'react-redux';
-import { store } from './store/store';
+import { store } from '../../../store/store';
+import Prioritizer from '../Prioritizer';
 
-test('App Renders Correctly', () => {
+test('Prioritizer renders', () => {
 	const component = renderer.create(
 		<Provider store={store}>
-			<App />
+			<Prioritizer />
 		</Provider>
 	);
 	let tree = component.toJSON();

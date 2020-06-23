@@ -10,6 +10,9 @@ const IssueList = () => {
 	const dispatch = useDispatch();
 	const [loading, setLoading] = useState(false);
 	const key = useSelector((state) => state.apiKey);
+	const issues = useSelector((state) => {
+		return state.issuesList.find((i) => i.id === state.selectedRepo);
+	});
 
 	const selectedRepo = useSelector((state) => {
 		return state.repos.find((r) => {
@@ -18,18 +21,15 @@ const IssueList = () => {
 	});
 
 	useEffect(() => {
-		if (selectedRepo != null) {
+		if (selectedRepo != null && !issues) {
 			setLoading(true);
 			getIssuesForRepo(selectedRepo.full_name, key).then((data) => {
 				dispatch(addIssues(data, selectedRepo.id));
 				setLoading(false);
 			});
 		}
-	}, [selectedRepo, key, dispatch]);
+	}, [selectedRepo, key, dispatch, issues]);
 
-	const issues = useSelector((state) => {
-		return state.issuesList.find((i) => i.id === state.selectedRepo);
-	});
 
 	const onDragEnd = (results) => {
 		if (results.source && results.destination) {

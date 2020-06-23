@@ -40,7 +40,7 @@ const reducer = (state = initialState, action) => {
 			};
 		case ADD_ISSUES:
 			const idx = state.issuesList.findIndex((i) => i.id === action.repoId);
-			const issuesToAdd = { id: action.repoId, issues: action.issues, priority: [] };
+			const issuesToAdd = { id: action.repoId, issues: action.issues};
 			let newIssues;
 			if (idx !== -1) {
 				newIssues = [

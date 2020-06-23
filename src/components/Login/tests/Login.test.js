@@ -1,13 +1,13 @@
 import React from 'react';
+import Login from '../Login';
 import renderer from 'react-test-renderer';
-import App from './App';
 import { Provider } from 'react-redux';
-import { store } from './store/store';
+import { store } from '../../../store/store';
 
-test('App Renders Correctly', () => {
+test('Login renders', () => {
 	const component = renderer.create(
 		<Provider store={store}>
-			<App />
+			<Login />
 		</Provider>
 	);
 	let tree = component.toJSON();
